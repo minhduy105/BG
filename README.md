@@ -4,10 +4,13 @@ This project is for the Berkshire Grey Coding Problem:
 
 The code only using the regex "*" and we only have 2 cases: at the begining of the search "*txt" or at the end of the search "abc*". This code assumes the files will consist of only letters and numbers. The search algorithm is case insensitive. 
 
-The test_set.txt is for the users to input the search pharse. 
-The folder Files is the folder that the algorithm will search on. The users can add or delete any files. 
-The FileSearch.py has the search algorithm
-The main.py has the main function to run the code
++ The test_set.txt is for the users to input the search pharse. 
+
++ The folder Files is the folder that the algorithm will search on. The users can add or delete any files. 
+
++ The FileSearch.py has the search algorithm
+
++ The main.py has the main function to run the code
 
 2. Write unit tests for the above.  Demonstrate your code coverage and justify it (i.e. why is this good enough)
 
