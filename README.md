@@ -22,5 +22,6 @@ I tested the two extreme cases, which are the first file and the last file in th
 The time is between O(n) and O(log(n)):
 
 The reason is that when the "*" is at the end of the search phrase (abc*), the name list is sorted and I can use binary search to get the results. The execution time would be O(log(n))
+
 When the "*" is at the beginning of the search phrase (*.txt), the name list in the folder is not sorted backward. So, I just have to do the iterative search method. The execution time would be O(n).
 
