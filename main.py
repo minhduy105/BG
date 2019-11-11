@@ -24,8 +24,9 @@ if __name__== "__main__":
         cnt = 1
         while line:
             print ("\nSearch word:" + line)
-        
-            files_list = FS.searchFile (path_name, line)
+            
+            #deleting new line
+            files_list = FS.searchFile (path_name, line.strip('\n'))
             print ("List of file: ")
             print (files_list)    
         

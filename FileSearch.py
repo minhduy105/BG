@@ -34,21 +34,27 @@ class FileSearch:
         if front_flag: 
             for i in files_in_path:
                 if (len(i)) >= len (search_name) - 1: # -1 because we do not count the "*"
-                    if i[len(i)-(len(search_name) - 1):len(i)].upper() == search_name[1:len(search_name)].upper():
+                    
+                    # get the search phase out of the file name
+                    file_check = i[len(i)-(len(search_name) - 1):len(i)].upper()
+                    file_search = search_name[1:len(search_name)].upper()
+                    
+                    if file_check == file_search:
                         file_name_list.append(i)                        
         
         else:
-            index = self.binarySearch(files_in_path, 0, len(files_in_path)-1, search_name[0:len(search_name)-1])
+            file_search = search_name[0:len(search_name)-1].upper()
+            index = self.binarySearch(files_in_path, 0, len(files_in_path)-1, file_search)
             if index == -1: 
                 return file_name_list
-            
-            
+           
             file_name_list.append(files_in_path[index])
             
             i = index -1
             while i >= 0: 
                 if len(files_in_path[i]) >= len(search_name) - 1:
-                    if files_in_path[i][0:len(search_name)-1].upper() == search_name[0:len(search_name)-1].upper():
+                    file_check = files_in_path[i][0:len(search_name)-1].upper()
+                    if file_check == file_search:
                         file_name_list.append(files_in_path[i])
                         i = i - 1
                     else:
@@ -59,7 +65,8 @@ class FileSearch:
             i = index + 1
             while i < len(files_in_path): 
                 if len(files_in_path[i]) >= len(search_name) - 1:
-                    if files_in_path[i][0:len(search_name)-1].upper() == search_name[0:len(search_name)-1].upper():
+                    file_check = files_in_path[i][0:len(search_name)-1].upper()
+                    if file_check == file_search:
                         file_name_list.append(files_in_path[i])
                         i = i + 1
                     else:
