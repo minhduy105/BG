@@ -1,0 +1,8 @@
+a*
+as*
+*.txt
+*a.docx
+yt*
+adsfsa*
+28*
+*

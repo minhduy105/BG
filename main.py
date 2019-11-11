@@ -19,15 +19,18 @@ if __name__== "__main__":
     
     print ("Folder name: " + path_name)
     
-    test_set = ["a*", "as*", "*.txt", "*a.docx", "yt*", "adsfsa*"]
-    
-    
-    
-    for i in test_set:
-        files_list = []
-        print ("\nSearch word:" + i)
-        files_list = FS.searchFile (path_name, i)
-        print ("List of file: ")
-        print (files_list)    
+    with open("test_set.txt") as fp:
+        line = fp.readline()
+        cnt = 1
+        while line:
+            print ("\nSearch word:" + line)
         
+            files_list = FS.searchFile (path_name, line)
+            print ("List of file: ")
+            print (files_list)    
+        
+            line = fp.readline()
+            cnt += 1
+        
+
     
