@@ -2,7 +2,7 @@ This project is for the Berkshire Grey Coding Problem:
 
 1. Write a python script to recurse a given directory location and return a list of files whose names match a regex (or maybe just whose size is > than some number)
 
-The code only using the regex "/*" and we only have 2 cases: at the begining of the search "/*txt" or at the end of the search "abc*". This code assumes the files will consist of only letters and numbers. The search algorithm is case insensitive. 
+The code only using the regex "\\*" and we only have 2 cases: at the begining of the search "\\*txt" or at the end of the search "abc*". This code assumes the files will consist of only letters and numbers. The search algorithm is case insensitive. 
 
 + The test_set.txt is for the users to input the search pharse. 
 
