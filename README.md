@@ -1,6 +1,6 @@
 This project is for the Berkshire Grey Coding Problem:
 
-1. Write a python script to recurse a given directory location and return a list of files whose names match a regex (or maybe just whose size is > than some number)
+<strong>1. Write a python script to recurse a given directory location and return a list of files whose names match a regex (or maybe just whose size is > than some number)</strong>
 
 The code only using the regex "\*" and we only have 2 cases: at the begining of the search "\*txt" or at the end of the search "abc\*". This code assumes the files will consist of only letters and numbers. The search algorithm is case insensitive. 
 
@@ -12,12 +12,12 @@ The code only using the regex "\*" and we only have 2 cases: at the begining of 
 
 + The main.py has the main function to run the code
 
-2. Write unit tests for the above.  Demonstrate your code coverage and justify it (i.e. why is this good enough)
+<strong>2. Write unit tests for the above.  Demonstrate your code coverage and justify it (i.e. why is this good enough)</strong>
 
 I tested the two extreme cases, which are the first file and the last file in the folder. Then, I tested a few random cases for the files inside the folder. I included both letter and number cases in my test set. Additionally, I also included 2 searche cases.
 
 
-3. Demonstrate execution time.  How might this be improved?
+<strong>3. Demonstrate execution time.  How might this be improved?</strong>
 
 The time is between O(n) and O(log(n)):
 
